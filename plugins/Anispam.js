@@ -1,21 +1,12 @@
+//import db from '../lib/database.js'
 
-let handler = async (m, { conn, usedPrefix }) => {
-    let chats = Object.entries(global.db.data.chats).filter(chat => chat[1].isBanned)
-    let users = Object.entries(global.db.data.users).filter(user => user[1].banned)
-    
-    m.reply(`
-≡ *USERS BANNED*
-
-▢ Total : *${users.length}* 
-
-${users ? '\n' + users.map(([jid], i) => `
-${i + 1}. ${conn.getName(jid) == undefined ? 'UNKNOWN' : conn.getName(jid)}
-▢ ${jid}
-`.trim()).join('\n') : ''}
-`.trim())
+let handler = async (m, { conn, isOwner, isAdmin, isROwner} ) => {
+    if (!(isAdmin || isOwner)) return dfail('admin', m, conn)
+    global.db.data.chats[m.chat].isBanned = false
+    m.reply('✅ Bot active in this group')   
 }
-handler.help = ['listban']
+handler.help = ['unbanchat']
 handler.tags = ['owner']
-handler.command = ['banlist', 'listban'] 
+handler.command = ['chaton', 'unbanchat'] 
 
 export default handler
