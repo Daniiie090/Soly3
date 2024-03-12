@@ -21,7 +21,7 @@ let handler = async (m, { conn }) => {
   .setLevel(level)
   .setCurrentXP(crxp) 
   .setRequiredXP(requiredXpToLevelUp) 
-  .setProgressBar('##0000FF', 'COLOR') // Set progress bar color here
+  .setProgressBar('#442f7a', 'COLOR') // Set progress bar color here
   .setDiscriminator(who.substring(3, 7))
   .setCustomStatusColor('#0000FF')
   .setLevelColor('#FFFFFF', '#FFFFFF')
