@@ -27,5 +27,5 @@ const handler = async (m, {conn, usedPrefix}) => {
 };
 handler.help = ['acertijo'];
 handler.tags = ['game'];
-handler.command = /^(تاريخ2)$/i;
+handler.command = /^(تاريخ)$/i;
 export default handler; 
