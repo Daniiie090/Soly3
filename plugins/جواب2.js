@@ -31,7 +31,7 @@ _📌مثال : ${usedPrefix+command} عادي_
 }
 handler.help = ['Maths <modes>']
 handler.tags = ['game']
-handler.command = ['maths', 'math', 'matemáticas', 'ganit','رياضيات','الرياضيات'] 
+handler.command = ['maths'] 
 
 
 let modes = {
