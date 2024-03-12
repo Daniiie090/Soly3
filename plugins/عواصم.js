@@ -27,5 +27,5 @@ const handler = async (m, {conn, usedPrefix}) => {
 };
 handler.help = ['acertijo'];
 handler.tags = ['game'];
-handler.command = /^(رياضه|رياضة)$/i;
+handler.command = /^(عواصم|عاصمة)$/i;
 export default handler;
