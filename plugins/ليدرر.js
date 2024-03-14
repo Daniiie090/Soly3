@@ -6,7 +6,7 @@ const handler = async (m, {conn, args, participants}) => {
   const sortedcredit = users.map(toNumber('الذهب')).sort(sort('الذهب'));
   const sortedLevel = users.map(toNumber('المستوى')).sort(sort('المستوى'));
   const usersExp = sortedExp.map(enumGetKey);
-  const userscredit = sortedLim.map(enumGetKey);
+  const userscredit = sortedcredit.map(enumGetKey);
   const usersLevel = sortedLevel.map(enumGetKey);
   const len = args[0] && args[0].length > 0 ? Math.min(100, Math.max(parseInt(args[0]), 10)) : Math.min(10, sortedExp.length);
   const adventurePhrases = [
