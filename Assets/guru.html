@@ -82,7 +82,7 @@ button i::before {
   transition: 0.2s;
 }
 
-button, #wet, #ins, #tlg, #dsk:hover i::before {
+button, #wet, #veno, #tlg, #dsk:hover i::before {
 
   animation: move 3s infinite;
 }
@@ -164,7 +164,7 @@ button:hover i::after {
   padding-right: 10px;
 }
 
-#wet2, #ins2, #tlg2, #dsk2, #gim2, #veno {
+#wet2, #veno2, #tlg2, #dsk2, #gim2{
   font-size: 19px;
   text-align: center;
   color: white;
@@ -174,7 +174,7 @@ button:hover i::after {
   border-radius: 20px;
   font-family: 'Changa', sans-serif;
 }
- #wet, #ins, #tlg, #dsk, #veno1{
+ #wet, #veno, #tlg, #dsk{
   text-align: center;
   color: white;
   width: 300px;
@@ -308,17 +308,22 @@ button:hover i::after {
     </div>
     <button id="wet" style="--clr:#39FF14"><span>WhatsApp</span><i></i></button>
 
-    <div id="ins2">
-        <h1>انستجرام</h1>
+    <div id="veno2">
+        <h1>website</h1>
         <p>━━━━━━━━━━</p>
     </div>
-    <button id="ins" style="--clr:#FF0000"><span>ins</span><i></i></button>
- </div>
-<div id="veno">
-        <h1>موقع المتجر</h1>
+    <button id="ins" style="--clr:#FF0000"><span>Instagram</span><i></i></button>
+
+    <div id="tlg2">
+        <h1>تليجرام</h1>
         <p>━━━━━━━━━━</p>
     </div>
-    <button id="veno1" style="--clr:#FF0000"><span>website</span><i></i></button>
+    <button id="tlg" style="--clr:#0FF0FC"><span>Telegram</span><i></i></button>
+   <div id="dsk2">
+        <h1>ديسكورد</h1>
+        <p>━━━━━━━━━━</p>
+    </div>
+    <button id="dsk" style="--clr:#7289da"><span>Discord</span><i></i></button>
  </div>
     <div class="button-container">
   <ul class="button-list">
@@ -343,7 +348,7 @@ button:hover i::after {
 
 wet.addEventListener("click", function() {
 
-  window.location.href = "https://wa.me/966572150221";
+  window.location.href = "https://wa.me/963959649663";
 });
 var veno = document.getElementById("veno");
 
@@ -351,6 +356,19 @@ veno.addEventListener("click", function() {
 
   window.location.href = "https://yooora.com";
 });
+var tlg = document.getElementById("tlg");
+
+tlg.addEventListener("click", function() {
+
+  window.location.href = "https://t.me/xYonex_Naksu";
+});
+var dsk = document.getElementById("dsk");
+
+dsk.addEventListener("click", function() {
+
+  window.location.href = "https://discord.com/invite/z8Hx3s55";
+});
+
     </script>
 </body>
 
